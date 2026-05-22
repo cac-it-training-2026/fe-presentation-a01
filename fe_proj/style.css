@@ -60,6 +60,25 @@ body {
     transform: scale(1.2); /* 少し大きくして押しやすく */
 }
 
+.bad-message{
+	display: none;
+}
+
+input:checked + .bad-message{
+	display: inline;
+	color: red;
+}
+
+.good-message{
+	display: none;
+}
+
+input:checked + .good-message{
+	display: inline;
+	color: blue;
+}
+
+
 /* 解答・解説の開閉部分 */
 .quiz-answer {
     background-color: #fcfcfc;
