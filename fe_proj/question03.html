@@ -7,24 +7,48 @@
     </head>
     <body>
         <div class="quiz-container">
-            <h3 class="quiz-question">問題3: 決定木</h3>
+            <h3 class="quiz-question">問題3: 深夜のラーメン診断AI</h3>
+            <p>
+            あるAIは、深夜にラーメンを食べるかどうかを次のように判断している。
+            </p>
+
+            <ul>
+                 <li>財布の中に1000円以上ある？
+                 <ul>
+                     <li>NO → 帰宅</li>
+                     <li>YES → 次へ</li>
+                 </ul>
+        </li>
+        <li>明日1限がある？
+            <ul>
+                <li>YES → 次へ</li>
+                <li>NO → ラーメン確定</li>
+            </ul>
+       </li>
+        <li>「今日は頑張った」と感じている？
+            <ul>
+                <li>YES → ラーメン確定</li>
+                <li>NO → コンビニ飯</li>
+            </ul>
+       </li>
+       </ul>
+
+       <p>
+        このように、条件を順番に分岐しながら結論を出す機械学習アルゴリズムはどれか。
+       </p>
 
             <form class="quiz-options">
                 <label>
-                    <input type="radio" name="q1" value="1" /> 1. High Text
-                    Markup Language
+                    <input type="radio" name="q1" value="1" /> 1. 深層学習
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="2" /> 2. Hyper Text
-                    Markup Language
+                    <input type="radio" name="q1" value="2" /> 2. 強化学習
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="3" /> 3. Hyper Tool
-                    Multi Language
+                    <input type="radio" name="q1" value="3" /> 3. 決定木
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="4" /> 4. Hyper Text
-                    Make Language
+                    <input type="radio" name="q1" value="4" /> 4. k-means法
                 </label>
             </form>
 
@@ -32,12 +56,12 @@
                 <summary>解答と解説を見る</summary>
                 <div class="answer-content">
                     <p class="correct-answer">
-                        <strong>正解：2. Hyper Text Markup Language</strong>
+                        <strong>正解：3. 決定木</strong>
                     </p>
                     <p class="explanation">
                         <strong>解説：</strong><br />
-                        HTMLは「Hyper Text Markup
-                        Language（ハイパーテキスト・マークアップ・ランゲージ）」の略です。Webページの構造を作成するための言語として使用されます。
+                        決定木は、「もし○○なら→△△」という条件分岐を繰り返して判断を行うアルゴリズムです。<br>
+                        今回のような「選択肢をたどって結論に到達する形式」は、決定木の考え方そのものです。
                     </p>
                 </div>
             </details>
