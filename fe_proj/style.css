@@ -10,7 +10,7 @@ body {
 
 /* 問題の枠組み */
 .quiz-container {
-    background-color: #ffffff;
+    background-color: deeppink;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 24px;
