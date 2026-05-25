@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>機械学習 4択問題</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="quiz-container">
+            <h3 class="quiz-question">問題3: 深夜のラーメン診断AI</h3>
+            <p>
+            あなたは大学生です。<br>深夜2時、とんでもなくおいしそうな匂いを漂わせるラーメン屋を前にしています。
+           『今ラーメンを食べるべきか』をAIに相談したところ、AIは次のように条件を分岐させながら判断を行いました。
+            </p>
+
+            <ol>
+    <li>
+        財布の中に1000円以上ある？
+        <ul>
+            <li>いいえ → 帰宅</li>
+            <li>はい → 2.へ</li>
+        </ul>
+    </li>
+
+    <li>
+        明日1限がある？
+        <ul>
+            <li>はい → 3.へ</li>
+            <li>いいえ → ラーメン確定</li>
+        </ul>
+    </li>
+
+    <li>
+        「今日は頑張った」と感じている？
+        <ul>
+            <li>はい → ラーメン確定</li>
+            <li>いいえ → コンビニの割引されたパン</li>
+        </ul>
+    </li>
+</ol>
+
+       <p>
+        このような判断方法を行う機械学習アルゴリズムはどれか。
+       </p>
+
+            <form class="quiz-options">
+                <label>
+                    <input type="radio" name="q1" value="1" /> 1. 深層学習
+                    <span class="bad-message">不正解</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2" /> 2. 強化学習
+                    <span class="bad-message">不正解</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3" /> 3. 決定木
+                    <span class="good-message">正解</span>
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4" /> 4. ニューラルネットワーク
+                    <span class="bad-message">不正解</span>
+                </label>
+            </form>
+
+            <details class="quiz-answer">
+                <summary>解答と解説を見る</summary>
+                <div class="answer-content">
+                    <p class="correct-answer">
+                        <strong>正解：3. 決定木</strong>
+                    </p>
+                    <p class="explanation">
+                        <strong>解説：</strong><br />
+                        深層学習は、ニューラルネットワークを多層化したアルゴリズムであり、大量のデータから特徴を学習して判断を行うため、今回のような条件分岐とは異なります。<br>
+また、強化学習は報酬や失敗を繰り返しながら最適な行動を学習するアルゴリズムであり、今回のような単純な条件分岐ではないため、答えとは異なります。<br>
+さらに、ニューラルネットワークは人間の脳の神経回路を模した仕組みでデータを学習するアルゴリズムであり、今回のような条件分岐による判断ではないため、答えとは異なります。<br>
+一方、決定木は、「もし△△なら→〇〇」という条件分岐を繰り返して判断を行うアルゴリズムです。<br>
+今回のような「選択肢をたどって結論に到達する形式」は、決定木の考え方そのものです。<br>
+以上より、正解は「決定木」です。
+                    </p>
+                </div>
+            </details>
+            <ul style="text-align: right; list-style: none;">
+            	<li><a href="index.html">問題一覧に戻る→</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

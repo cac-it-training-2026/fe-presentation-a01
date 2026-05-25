@@ -5,7 +5,7 @@ body {
         Meiryo, sans-serif;
     color: #333;
     padding: 20px;
-    background-color: #f4f7f6;
+    background-color: rgb(255, 234, 238);
 }
 
 /* 問題の枠組み */
@@ -59,6 +59,25 @@ body {
     margin-right: 10px;
     transform: scale(1.2); /* 少し大きくして押しやすく */
 }
+
+.bad-message{
+	display: none;
+}
+
+input:checked + .bad-message{
+	display: inline;
+	color: red;
+}
+
+.good-message{
+	display: none;
+}
+
+input:checked + .good-message{
+	display: inline;
+	color: blue;
+}
+
 
 /* 解答・解説の開閉部分 */
 .quiz-answer {
